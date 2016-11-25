@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginTextFieldContainer" customModule="EcobeeSignup" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUS-SJ-uJa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3qm-iK-h73">
+                            <rect key="frame" x="8" y="8" width="20" height="20.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="1C2-Xq-oMw"/>
+                                <constraint firstAttribute="width" secondItem="3qm-iK-h73" secondAttribute="height" multiplier="1:1" id="VZh-Bc-QTD"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dir-N6-enX">
+                            <rect key="frame" x="36" y="0.0" width="339" height="36"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3qm-iK-h73" firstAttribute="leading" secondItem="BUS-SJ-uJa" secondAttribute="leading" constant="8" id="JQ1-fS-Hzr"/>
+                        <constraint firstAttribute="bottom" secondItem="Dir-N6-enX" secondAttribute="bottom" id="Rn5-h8-cDQ"/>
+                        <constraint firstItem="3qm-iK-h73" firstAttribute="centerY" secondItem="BUS-SJ-uJa" secondAttribute="centerY" id="cQS-ja-CeG"/>
+                        <constraint firstAttribute="trailing" secondItem="Dir-N6-enX" secondAttribute="trailing" id="cxS-Z3-4Gm"/>
+                        <constraint firstAttribute="height" constant="36" id="i4N-PQ-2Va"/>
+                        <constraint firstItem="Dir-N6-enX" firstAttribute="leading" secondItem="3qm-iK-h73" secondAttribute="trailing" constant="8" id="kG9-KP-sLM"/>
+                        <constraint firstItem="Dir-N6-enX" firstAttribute="top" secondItem="BUS-SJ-uJa" secondAttribute="top" id="rgm-Ge-aX4"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="BUS-SJ-uJa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OMj-wJ-uPg"/>
+                <constraint firstItem="BUS-SJ-uJa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Sjd-Zg-yeK"/>
+                <constraint firstAttribute="bottom" secondItem="BUS-SJ-uJa" secondAttribute="bottom" id="kKa-kQ-JLI"/>
+                <constraint firstItem="BUS-SJ-uJa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tiM-0l-iox"/>
+                <constraint firstAttribute="trailing" secondItem="BUS-SJ-uJa" secondAttribute="trailing" id="uFJ-na-JHC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="30.5" y="354.5"/>
+        </view>
+    </objects>
+</document>
